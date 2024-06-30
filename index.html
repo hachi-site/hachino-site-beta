@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/site-icon/site-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/site-icon/site-icon.png">
+    <title>はちのリンク</title>
+    <style>
+        body {
+            background-color: #d8c2ec;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        /*----HEADER----*/
+        .head {
+            position: fixed;
+            width: 200%;
+            top: 0;
+            z-index: 50;
+            height: 2.50rem;
+            margin-left: -50%;
+            background-color: #fff;
+        }
+        .head:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;    
+            display: block;
+            background-image: linear-gradient(64.95deg, #c59fe9 5.59%, #ff94b7 91.59%);
+            --tw-content: "";
+            content: var(--tw-content);
+            height: 2px;
+            width: 200%;
+            margin: 0 calc( 50% - 60vw );
+        }
+        /*----HEADER-ICONS----*/
+        .h-title {
+            margin: 0 auto;
+            width: 90vw;
+            height: 100%;
+            display: flex;
+        }
+        .h-center {
+            width: 100%;
+            height: 100%;
+            white-space: nowrap;
+            text-align: center;
+        }
+        /*----LINK-BUTTONS----*/
+        .buttons {
+            z-index: 1;
+            display: block;
+            padding-top: 100px;
+        }
+        .link div {
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            -ms-flex-pack: justify;
+            height: 100px;
+            width: 90%;
+            border: 1px solid #000;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .link a {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+        }
+        .link img b p {
+            margin-top: 100%;
+        }
+        .link img {
+            margin-left: 10px;
+        }
+        .link b {
+            font-size: 13px;
+        }
+        .link p {
+            font-size: 9px;
+            margin-left: 10px;
+        }
+        .right-img {
+            animation: rotation 4s linear infinite;
+        }
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /*----EASTER-EGG----*/
+        @media (max-width: 4095px),(max-height: 4095px) {
+            .egg{
+                display: none;
+            }
+        }
+        .egg {
+            text-align: center;
+            font-size: 1000%;
+            padding-top: 50%;
+        }
+        </style>
+</head>
+<body>
+    <div class="base">
+        <header class="head">
+            <div class="h-title">
+                <div class="h-center" type="text">
+                    <img src="images/text/header_text.png" alt="hachino-link" height="100%">
+                </div>
+            </div>
+        </header>       
+        <div class="buttons">
+            <div class="link">
+                <div class="tik">
+                    <a href="https://www.tiktok.com/@hachida1627?_t=8nXZYCopNVX&_r=1">
+                        <img src="images/1024px/tiktok.png" alt="tiktok" height="65px">
+                        <p>
+                            <b>・TikTok</b><br>
+                            TikTokでメインに活動してるよ！<br>
+                            動画投稿やライブ配信をよくしてるから<br>
+                            みんなフォロー待ってる！！
+                        </p>
+                        <img class="right-img" src="images/hachi-icons/sleepy.png" alt="sleepy" height="50px">
+                    </a>
+                </div>
+                <div class="twi">
+                    <a href="https://x.com/hac57251?s=09">
+                        <img src="images/1024px/twitter.png" alt="twitter" height="65px">
+                        <p>
+                            <b>・Twitter</b><br>
+                            Twitterでは日常のつぶやきや配信の予告とかをメインでしてるよ！<br>
+                            皆のいいねとかリプライも見てるから<br>
+                            フォローしてチェックしといて
+                        </p>
+                    </a>
+                </div>
+                <div class="you">
+                    <a href="https://youtube.com/@hachidao671">
+                        <img src="images/1024px/youtube.png" alt="youtube" height="65px">
+                        <p>
+                            <b>・YouTube</b><br>
+                            YouTubeでは長めの動画をアップしてたりするよ<br>
+                            チャンネル登録して最新動画とか見てね！！
+                        </p>
+                    </a>
+                </div>
+                <div class="ama">
+                    <a href="">
+                        <img src="images/1024px/amazon.png" alt="amazon" height="65px">
+                        <p>
+                            <b>・Amazonほしい物リスト</b><br>
+                            個人的に買ってくれると助かるもの公開してるから<br>
+                            リストから何か買ってくれるとすっごく助かる
+                        </p>
+                    </a>
+                </div>
+                <div class="pay">
+                    <a href="https://qr.paypay.ne.jp/p2p01_y4iTOuHtcgtuaWmW">
+                        <img src="images/1024px/paypay.png" alt="paypay" height="65px">
+                        <p>
+                            <b>・PayPay</b><br>
+                            PayPayでも貢いでくれると<br>
+                            少額でもとても助かるから、良かったらしてね！
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="egg">create by mi</div>
+</body>
+</html>
